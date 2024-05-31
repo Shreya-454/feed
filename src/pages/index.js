@@ -7,5 +7,6 @@ export default function Home() {
    <div className=" bg-white">
    <Feed/>
    </div>
+
   );
 }
