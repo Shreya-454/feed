@@ -19,7 +19,7 @@ export default function Based () {
                                     <div className="">
                                         <CommonBtn  icon={data.icon}
                                             text={data.text} className={`${
-                                                (index === 2 || index === 9) ? "!gap-2 opacity-50 pointer-events-none":""
+                                                (index === 2 || index === 9 || index === 12) ? "!gap-2 opacity-50 pointer-events-none":""
                                             } `} />
                                     </div>
                                 </div>
