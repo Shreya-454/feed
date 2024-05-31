@@ -9,7 +9,7 @@ const CommonBtn = ({ text, icon, className, gap, type, ...props }) => {
 
      
     >
-      {icon && <Image src={icon} alt={`${text} icon`} width={16} height={16} style={{ marginRight: gap }} />}
+      {icon && <Image src={icon} alt={`${text} icon`} width={16} height={16}  />}
       <span>{text}</span>
     </button>
   );
