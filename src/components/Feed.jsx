@@ -46,7 +46,7 @@ export default function Feed() {
           <button
             onClick={() => openTab("tab1")}
             className={`text-darkGreen  text-base leading-[100%] px-10 py-2 border border-solid  rounded-[4px] ${
-              tab === "tab1" ? "bg-[#F0FDF4] opacity-100 shadow-[inset_2px_2px_0px_0px_#0C0A0980] border-[#166534]" : "bg-transparent opacity-50 shadow-[1px_1px_0px_0px #052E1633] border-[#052E1633]"
+              tab === "tab1" ? "bg-[#F0FDF4] opacity-100 shadow-[inset_2px_2px_0px_0px_#0C0A0980] border-[#166534]" : "bg-transparent opacity-50 shadow-[1px_1px_0px_0px_#052E1633] border-[#052E1633]"
             }`}
             id="tabbtn"
           >
@@ -55,7 +55,7 @@ export default function Feed() {
           <button
             onClick={() => openTab("tab2")}
             className={`text-darkGreen text-base leading-[100%] px-[6px] py-2 border border-solid border-[#052E1633] rounded-[4px] ${
-              tab === "tab2" ? "bg-[#F0FDF4] opacity-100 shadow-[inset_2px_2px_0px_0px_#0C0A0980]  border-[#166534]" : "bg-transparent opacity-50 shadow-[1px_1px_0px_0px #052E1633] border-[#052E1633] "}`}
+              tab === "tab2" ? "bg-[#F0FDF4] opacity-100 shadow-[inset_2px_2px_0px_0px_#0C0A0980]  border-[#166534]" : "bg-transparent opacity-50 shadow-[1px_1px_0px_0px_#052E1633] border-[#052E1633] "}`}
             id="tabbtn"
           >
             Leaderboard
