@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Logo } from "./common/Icons";
 import Image from "next/image";
 import Content from "./common/Content";
+import Based from "./Based";
 
 export default function Feed() {
   const [tab, setTab] = useState("tab1");
@@ -13,7 +14,7 @@ export default function Feed() {
 
   return (
     <div>
-      <div className="max-w-[393px] mx-auto w-full bg-lightGreen pt-[72px] px-4 h-screen">
+      <div className=" pt-[72px] px-4 h-screen">
         <div className="flex justify-between mb-6">
           <p className="font-inter text-[#052E16] text-[22px] font-bold">
             Feed
@@ -76,6 +77,9 @@ export default function Feed() {
         </div>
         {tab === "tab1" && (
          <Content/>
+            )}
+                 {tab === "tab2" && (
+       <Based/>
             )}
       </div>
     </div>
