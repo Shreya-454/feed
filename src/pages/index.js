@@ -1,5 +1,4 @@
-import Based from "@/components/Based";
-import Feed from "@/components/Feed";
+
 import Hero from "@/components/Hero";
 
 
