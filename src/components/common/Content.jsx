@@ -1,7 +1,7 @@
 import { contentdata } from "./Helper";
 import Image from "next/image";
 
-export default function content() {
+export default function Content() {
     return (
         <>
             <div className=''>

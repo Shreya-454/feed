@@ -22,5 +22,12 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        'option:hover': {
+          backgroundColor: '#D3D3D3', /* Light grey background on hover */
+        },
+      }, ['responsive', 'hover']);}
+  ],
 };

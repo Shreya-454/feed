@@ -8,3 +8,29 @@ body{
     font-family: 'Inter',sans-serif;
 }
 
+select option [value="one"] {
+    background-color: white !important;
+    color: #052E16 !important;
+}
+
+
+ 
+select#mySelect option {
+  background-color: white;
+  width: 100px !important;
+  color: #052E16 !important;
+}
+select#mySelect option:hover{
+    background-color: grey !important;
+} 
+
+ 
+/* select#mySelect option[value="value2"] {
+  background-color: lightgreen;
+  color: black;
+}
+  
+select#mySelect option[value="value3"] {
+    background-color: lightcoral;
+    color: white;
+  } */
