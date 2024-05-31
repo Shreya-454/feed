@@ -17,7 +17,7 @@ export default function Feed() {
           <p className="font-inter text-[#052E16] text-[22px] font-bold">
             Feed
           </p>
-          <div className="h-[27px] bg-[#F0FDF4] flex items-center justify-between pl-[6px] pr-1 py-2 border border-solid border-[#052E160D] rounded-[4px]">
+          <div className="h-[27px] bg-[#F0FDF4] flex items-center justify-between pl-[6px] pr-1 py-2 border border-solid border-[#052E160D] rounded-[4px] gap-2">
             <Logo />
             <select
               name="numbers"
