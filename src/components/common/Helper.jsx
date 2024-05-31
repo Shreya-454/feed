@@ -1,10 +1,10 @@
-import { Cardicon1 } from "./Icons";
 
-//---------feed-data----------
-export const feedCarddata = [
+
+//---------content-data----------
+export const contentdata = [
     {
-        Svg: <Cardicon1/>,
-        content: "16982 attacked Retardioand won 159.82 points",
+        Svg: "/assets/svg/card1.svg",
+        content1:'won',
+        content2: "13mn ago",
     },
-
 ];
