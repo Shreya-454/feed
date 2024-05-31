@@ -61,6 +61,7 @@ export const basedCarddata = [
         content1: '1295059.36',
         icon: '/assets/svg/shield.svg',
         text: 'Shield',
+
     },
     {
         digit: "#1",

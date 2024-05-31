@@ -4,7 +4,7 @@ import { basedCarddata } from "./common/Helper";
 export default function Based () {
     return (
         <>
-            <div>
+            <div className=" h-[70vh] overflow-y-scroll ">
                 {basedCarddata.map ((data, index) => {
                     return (
                         <div key={index}>
@@ -17,8 +17,10 @@ export default function Based () {
                                         </div>
                                     </div>
                                     <div className="">
-                                        <CommonBtn gap={data.gap} icon={data.icon}
-                                            text={data.text} />
+                                        <CommonBtn  icon={data.icon}
+                                            text={data.text} className={`${
+                                                (index === 2 || index === 9) ? "!gap-2 opacity-50 pointer-events-none":""
+                                            } `} />
                                     </div>
                                 </div>
                             </div>
