@@ -14,10 +14,12 @@ module.exports = {
       colors: {
         lightGreen: '#DCFCE7',
         Green: '#166534',
+        red: '#651616',
         darkGreen:'#052E16',
         grey: '#44403C',
+        offWhite: '#F0FDF4',
       },
-  
+
     },
   },
   plugins: [],
