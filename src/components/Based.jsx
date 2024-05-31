@@ -8,16 +8,16 @@ export default function Based () {
           
 <label class="inline-flex items-center cursor-pointer">
   <input type="checkbox" value="" class="sr-only peer"/>
-  <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none   rounded-full peer dark:bg-[#166534] peer-checked:after:translate-x-[0] after:translate-x-[193%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[3px] after:start-[2px] after:bg-[#DCFCE7] shadow-[inset_2px_2px_0px_0px_#0C0A0980] peer-checked:shadow-[1px_1px_0px_0px_#16653480] duration-300
-   peer-checked:after:bg-[#166534] peer-checked:after:shadow-[inset_2px_2px_0px_0px_#0C0A0980] after:rounded-full after:h-[9.6px] after:w-[9.6px] after:transition-all dark:border-gray-600 peer-checked:bg-[#F0FDF4]"></div>
-  <span class=" text-xs tracking-[0.01em] font-normal text-darkGreen pl-[6px]">Show Bonkable (32)</span>
+  <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none   rounded-full peer dark:bg-Green peer-checked:after:translate-x-[0] after:translate-x-[193%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[3px] after:start-[2px] after:bg-[#DCFCE7] shadow-[inset_2px_2px_0px_0px_#0C0A0980] peer-checked:shadow-[1px_1px_0px_0px_#16653480] duration-300
+   peer-checked:after:bg-Green peer-checked:after:shadow-[inset_2px_2px_0px_0px_#0C0A0980] after:rounded-full after:h-[9.6px] after:w-[9.6px] after:transition-all  peer-checked:bg-[#F0FDF4]"></div>
+  <span class=" text-xs tracking-[0.01em] font-normal text-darkGreen pl-[6px] leading-1lg">Show Bonkable (32)</span>
 </label>
 <div className=" mb-4 mt-2">
     <label class="inline-flex  cursor-pointer  items-center">
       <input type="checkbox" value="" class="sr-only peer"/>
-      <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none   rounded-full peer dark:bg-[#166534] peer-checked:after:translate-x-[0] after:translate-x-[193%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[3px] after:start-[2px] after:bg-[#DCFCE7] shadow-[inset_2px_2px_0px_0px_#0C0A0980] peer-checked:shadow-[1px_1px_0px_0px_#16653480] duration-300
-       peer-checked:after:bg-[#166534] peer-checked:after:shadow-[inset_2px_2px_0px_0px_#0C0A0980] after:rounded-full after:h-[9.6px] after:w-[9.6px] after:transition-all dark:border-gray-600 peer-checked:bg-[#F0FDF4]"></div>
-      <span class=" text-xs tracking-[0.01em] font-normal text-darkGreen pl-[6px]">My pets</span>
+      <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none   rounded-full peer dark:bg-Green peer-checked:after:translate-x-[0] after:translate-x-[193%]  after:content-[''] after:absolute after:top-[3px] after:start-[2px] after:bg-[#DCFCE7] shadow-[inset_2px_2px_0px_0px_#0C0A0980] peer-checked:shadow-[1px_1px_0px_0px_#16653480] duration-300
+       peer-checked:after:bg-Green peer-checked:after:shadow-[inset_2px_2px_0px_0px_#0C0A0980] after:rounded-full after:h-[9.6px] after:w-[9.6px] after:transition-all  peer-checked:bg-[#F0FDF4]"></div>
+      <span class=" text-xs tracking-[0.01em] font-normal text-darkGreen pl-[6px] leading-1lg">My pets</span>
     </label>
 </div>
 
@@ -29,7 +29,7 @@ export default function Based () {
                                     <div className="flex gap-2">
                                         <div className="w-[47px] h-[38px] bg-lightGreen text-black font-bold text-base leading-1lg rounded-[4px] flex justify-center items-center">{data.digit}</div>
                                         <div>
-                                            <p className="font-bold text-base text-Green max-w-[150px] leading-6md"><span className='text-grey font-normal text-base'>Based.eth</span> <span className='text-lightGrey font-normal text-xs'>id: 73</span> {data.content1} <span className="font-normal ">pts</span></p>
+                                            <p className="font-bold text-base text-Green max-w-[150px] leading-1lg"><span className='text-grey font-normal text-base'>Based.eth</span> <span className='text-lightGrey font-normal text-xs'>id: 73</span> {data.content1} <span className="font-normal ">pts</span></p>
                                         </div>
                                     </div>
                                     <div className="">
