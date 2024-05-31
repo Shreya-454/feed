@@ -11,6 +11,11 @@ module.exports = {
         "4md": "40px",
         "9xl": "96px",
       },
+      colors: {
+        lightGreen: '#DCFCE7',
+        darkGreen: '#166534',
+        grey: '#44403C',
+      },
   
     },
   },
