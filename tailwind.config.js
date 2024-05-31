@@ -17,7 +17,13 @@ module.exports = {
         red: '#651616',
         darkGreen:'#052E16',
         grey: '#44403C',
+        lightGrey: '#D6D3D1',
         offWhite: '#F0FDF4',
+      },
+      lineHeight: {
+        '1lg': '100%',
+        '6md': '63%',
+        '5lg': '115%',
       },
 
     },
