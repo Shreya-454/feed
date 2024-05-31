@@ -26,7 +26,7 @@ export default function Hero() {
    <button  onClick={() => openNav("tab2")}  className={`  rounded-[4px] w-[70px] h-[53px] flex flex-col justify-center items-center ${
     tab === "tab2"?"opacity-100 bg-lightGreen":"opacity-80 bg-transparent "
    }`}>
-  <Image src="/assets/svg/exploreIcon.svg" width={28} height={32}/>
+  <Image src="/assets/svg/exploreIcon.svg" width={28} height={32} alt="explore"/>
     <span className="text-darkGreen text-[11px] font-normal ">Explore</span>
    </button>
    <button  onClick={() => openNav("tab3")}  className={`  rounded-[4px] w-[70px] h-[53px] flex flex-col justify-center items-center ${
