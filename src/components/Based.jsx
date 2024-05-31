@@ -1,6 +1,6 @@
 import { basedCarddata } from "./common/Helper";
 
-export default function () {
+export default function Based () {
     return (
         <>
             <div>
