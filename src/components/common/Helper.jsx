@@ -1,3 +1,4 @@
+import { type } from "os";
 
 
 //---------content-data----------
@@ -73,6 +74,7 @@ export const basedCarddata = [
         content1: '1295059.36',
         icon: '/assets/svg/time.svg',
         text: '23m 15s',
+        type: 'secondary',
     },
     {
         digit: "#1",
@@ -115,5 +117,6 @@ export const basedCarddata = [
         content1: '1295059.36',
         icon: '/assets/svg/time.svg',
         text: '23m 15s',
+        type:'secondary',
     },
 ]

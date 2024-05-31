@@ -17,7 +17,7 @@ export default function () {
                                         </div>
                                     </div>
                                     <div className="">
-                                        <CommonBtn gap={data.gap} icon={data.icon}
+                                        <CommonBtn gap={data.gap} icon={data.icon} type={data.type} 
                                             text={data.text} />
                                     </div>
                                 </div>
