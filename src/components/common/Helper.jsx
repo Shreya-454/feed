@@ -58,7 +58,62 @@ export const contentdata = [
 export const basedCarddata = [
     {
         digit: "#1",
-        content1: '1295059.36 pts',
-        content2: "13mn ago",
+        content1: '1295059.36',
+        icon: '/assets/svg/shield.svg',
+        text: 'Shield',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/bonk.svg',
+        text: 'Bonk',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/time.svg',
+        text: '23m 15s',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/shield.svg',
+        text: 'Shield',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/shield.svg',
+        text: 'Shield',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/bonk.svg',
+        text: 'Bonk',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/bonk.svg',
+        text: 'Bonk',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/bonk.svg',
+        text: 'Bonk',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/bonk.svg',
+        text: 'Bonk',
+    },
+    {
+        digit: "#1",
+        content1: '1295059.36',
+        icon: '/assets/svg/time.svg',
+        text: '23m 15s',
     },
 ]
