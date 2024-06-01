@@ -12,9 +12,10 @@ module.exports = {
         lightGreen: '#DCFCE7',
         Green: '#166534',
         red: '#651616',
-        darkGreen:'#052E16',
+        darkGreen: '#052E16',
         grey: '#44403C',
-        fadeGreen:'#052E160D',
+        black: '#0C0A09',
+        fadeGreen: '#052E160D',
         lightGrey: '#D6D3D1',
         offWhite: '#F0FDF4',
       },
@@ -26,11 +27,12 @@ module.exports = {
     },
   },
   plugins: [
-    function({ addUtilities }) {
+    function ({ addUtilities }) {
       addUtilities({
         'option:hover': {
           backgroundColor: '#D3D3D3', /* Light grey background on hover */
         },
-      }, ['responsive', 'hover']);}
+      }, ['responsive', 'hover']);
+    }
   ],
 };
