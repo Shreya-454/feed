@@ -45,7 +45,7 @@ export default function Feed() {
      </div>
             )}
                {tab === "tab2" && (
-       <div className="flex items-center gap-1 bg-white py-1 px-4 rounded-[4px] justify-center max-w-[139px] mx-auto mb-5">
+       <div className="flex items-center gap-1 bg-offWhite py-1 px-4 rounded-[4px] justify-center max-w-[139px] mx-auto mb-5">
        <Image
          src="/assets/svg/readySvg.svg"
          width={12}
@@ -60,7 +60,7 @@ export default function Feed() {
         <div className="flex justify-center gap-2 mb-4">
           <button
             onClick={() => openTab("tab1")}
-            className={`text-darkGreen  text-base px-10 py-2 border border-solid  leading-1md rounded-[4px] ${
+            className={`text-darkGreen  max-w-[98px] h-8 text-base px-10 py-2 border border-solid  leading-1md rounded-[4px] ${
               tab === "tab1" ? "bg-[#F0FDF4] opacity-100 shadow-[inset_2px_2px_0px_0px_#0C0A0980] border-[#166534]" : "bg-transparent opacity-50 shadow-[1px_1px_0px_0px_#052E1633] border-[#052E1633]"
             }`}
             id="tabbtn"
@@ -69,7 +69,7 @@ export default function Feed() {
           </button>
           <button
             onClick={() => openTab("tab2")}
-            className={`text-darkGreen text-base leading-1md px-[6px] py-2 border border-solid border-[#052E1633] rounded-[4px] ${
+            className={`text-darkGreen text-base leading-1md max-w-[109px] h-8  px-[6px] py-2 border border-solid border-[#052E1633] rounded-[4px] ${
               tab === "tab2" ? "bg-[#F0FDF4] opacity-100 shadow-[inset_2px_2px_0px_0px_#0C0A0980]  border-[#166534]" : "bg-transparent opacity-50 shadow-[1px_1px_0px_0px_#052E1633] border-[#052E1633] "}`}
             id="tabbtn"
           >
