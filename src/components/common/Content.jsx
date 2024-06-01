@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Content() {
     return (
         <>
-            <div className=" h-[70vh] overflow-y-scroll">
+            <div className=" h-[572px] overflow-y-scroll">
                 {contentdata.map((data, index) => {
                     return (
                         <div key={index}>

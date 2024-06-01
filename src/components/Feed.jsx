@@ -15,22 +15,24 @@ export default function Feed() {
   return (
     <div>
       <div className=" pt-[72px] px-4 h-screen">
-        <div className="flex justify-between mb-6">
+        <div className="flex justify-between mb-[23px]">
           <p className="font-inter text-darkGreen text-[22px] font-bold leading-1lg">
             Feed
           </p>
-          <div className="h-[27px] bg-offWhite flex items-center justify-between pl-[6px] pr-1 py-2 border border-solid border-fadeGreen rounded-[4px] gap-2">
+          <div className="h-[27px] bg-offWhite flex items-center justify-between pl-[6px] pr-4 py-2 border border-solid border-fadeGreen rounded-[4px] gap-2">
             <Logo />
-        <select id="mySelect" className=" focus:outline-none text-darkGreen text-base leading-1lg">
-  <option value="value1">#36985</option>
-  <option value="value2">#36986</option>
-  <option value="value3">#36987</option>
-  <option value="value4">#36987</option>
-</select>
+            <div class="select-container">
+    <select id="mySelect" class="focus:outline-none text-darkGreen bg-transparent text-base leading-1lg">
+      <option value="value1">#36985</option>
+      <option value="value2">#36986</option>
+      <option value="value3">#36987</option>
+      <option value="value4">#36987</option>
+    </select>
+  </div>
           </div>
         </div>
         {tab === "tab1" && (
-       <div className="flex items-center gap-1 bg-white py-1 px-4 rounded-[4px] justify-center max-w-[183px] mx-auto mb-[22px] ">
+       <div className="flex items-center gap-1 bg-white py-1 px-4 rounded-[4px] justify-center max-w-[183px] mx-auto mb-5 ">
        <Image
          src="/assets/svg/timeSvg.svg"
          width={12}
@@ -43,7 +45,7 @@ export default function Feed() {
      </div>
             )}
                {tab === "tab2" && (
-       <div className="flex items-center gap-1 bg-white py-1 px-4 rounded-[4px] justify-center max-w-[139px] mx-auto mb-[22px]">
+       <div className="flex items-center gap-1 bg-white py-1 px-4 rounded-[4px] justify-center max-w-[139px] mx-auto mb-5">
        <Image
          src="/assets/svg/readySvg.svg"
          width={12}
