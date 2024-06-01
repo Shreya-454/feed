@@ -12,7 +12,7 @@ export default function Hero() {
     }
     return(
         <div>
-<div className="max-w-[393px] mx-auto w-full bg-lightGreen  h-[852px] relative">
+<div className="max-w-[393px] mx-auto w-full bg-lightGreen  max-h-[852px] h-full relative">
    {tab === "tab1" && (
       <Feed/>
               )}
