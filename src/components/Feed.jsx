@@ -19,10 +19,10 @@ export default function Feed() {
           <p className="font-inter text-darkGreen text-[22px] font-bold leading-1lg">
             Feed
           </p>
-          <div className="h-[27px] bg-offWhite flex items-center justify-between pl-[6px] pr-4 py-2 border border-solid border-fadeGreen rounded-[4px] gap-2">
+          <div className="h-[27px] bg-offWhite flex items-center justify-between pl-[6px]  py-2 border border-solid border-fadeGreen rounded-[4px] gap-2">
             <Logo />
             <div class="select-container">
-    <select id="mySelect" class="focus:outline-none text-darkGreen bg-transparent text-base leading-1lg">
+    <select id="mySelect" class="focus:outline-none text-darkGreen bg-transparent text-base leading-1lg pr-4">
       <option value="value1">#36985</option>
       <option value="value2">#36986</option>
       <option value="value3">#36987</option>
