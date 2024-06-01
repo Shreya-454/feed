@@ -4,7 +4,7 @@ import { basedCarddata } from "./common/Helper";
 export default function Based () {
     return (
         <>
-            <div className=" h-[572px] overflow-y-scroll ">
+            <div className=" h-[565px] overflow-y-scroll ">
           
 <label class="inline-flex items-center cursor-pointer">
   <input type="checkbox" value="" class="sr-only peer"/>
