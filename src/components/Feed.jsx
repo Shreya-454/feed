@@ -14,7 +14,7 @@ export default function Feed() {
 
   return (
     <div>
-      <div className=" pt-[72px] px-4 h-full ">
+      <div className=" pt-[72px] px-4 h-screen ">
         <div className="flex justify-between mb-[23px]">
           <p className="font-inter text-darkGreen text-[22px] font-bold leading-1lg">
             Feed
