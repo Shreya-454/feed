@@ -1,10 +1,10 @@
 import { contentdata } from "./Helper";
 import Image from "next/image";
 
-export default function content() {
+export default function Content() {
     return (
         <>
-            <div>
+            <div className=" h-[70vh] overflow-y-scroll">
                 {contentdata.map((data, index) => {
                     return (
                         <div key={index}>
@@ -14,10 +14,10 @@ export default function content() {
                                             <div>
                                                 <Image src={data.Svg} alt="svg" width={38} height={38} />
                                             </div>
-                                        <p className="text-base font-normal text-black max-w-[186px] leading-5lg">16982 <span className="text-grey">attacked</span> Retardio <span className="text-grey">and</span > <span className={`${data.content1 === 'won' ? 'text-Green font-bold' : 'text-red font-bold '}`}>{data.content1}  159.82 points</span></p>
+                                        <p className="text-base font-normal leading-1lg text-black max-w-[186px] ">16982 <span className="text-grey">attacked</span> Retardio <span className="text-grey">and</span > <span className={`${data.content1 === 'won' ? 'text-Green font-bold' : 'text-red font-bold '}`}>{data.content1}  159.82 points</span></p>
                                         </div>
                                         <div>
-                                            <p className='font-normal text-xs text-grey text-nowrap'>{data.content2}</p>
+                                            <p className='font-normal text-xs leading-1lg text-grey text-nowrap'>{data.content2}</p>
                                         </div>
                                     </div>
                                 </div>

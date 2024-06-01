@@ -7,25 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        "4md": "40px",
-        "9xl": "96px",
-      },
+
       colors: {
         lightGreen: '#DCFCE7',
         Green: '#166534',
         red: '#651616',
+        darkGreen: '#052E16',
         grey: '#44403C',
+        black: '#0C0A09',
+        fadeGreen: '#052E160D',
         lightGrey: '#D6D3D1',
         offWhite: '#F0FDF4',
       },
       lineHeight: {
-        '1lg': '100%',
-        '6md': '63%',
-        '5lg': '115%',
+        '1lg': '121%',
+        '1md': '100%',
       },
 
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        'option:hover': {
+          backgroundColor: '#D3D3D3', /* Light grey background on hover */
+        },
+      }, ['responsive', 'hover']);
+    }
+  ],
 };

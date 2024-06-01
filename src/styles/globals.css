@@ -7,3 +7,24 @@
 body{
     font-family: 'Inter',sans-serif;
 }
+
+select option [value="one"] {
+    background-color: white !important;
+    color: #052E16 !important;
+}
+
+
+ 
+select#mySelect option {
+  background-color: white;
+  width: 100px !important;
+  color: #052E16 !important;
+}
+select#mySelect option:hover{
+    background-color: grey !important;
+} 
+
+ 
+::-webkit-scrollbar{
+  display: none;
+}
