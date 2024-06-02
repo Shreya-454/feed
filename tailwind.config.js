@@ -14,16 +14,22 @@ module.exports = {
         red: '#651616',
         darkGreen: '#052E16',
         grey: '#44403C',
+        lightGrey: '#052e1680',
+        darkGrey:'#342E2E',
         black: '#0C0A09',
         fadeGreen: '#052E160D',
         lightGrey: '#D6D3D1',
         offWhite: '#F0FDF4',
+        cGreen:'#abdaba',
       },
       lineHeight: {
         '1lg': '121%',
+        '5lg': '125%',
         '1md': '100%',
       },
-
+      fontSize: {
+       '2md':'22px',
+      },
     },
   },
   plugins: [
