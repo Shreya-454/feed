@@ -9,33 +9,16 @@ body{
 }
 #mySelect {
   -webkit-appearance: none; /* Remove default arrow in Chrome, Safari, Edge */
-  -moz-appearance: none; /* Remove default arrow in Firefox */
-  appearance: none; /* Remove default arrow */
+  -moz-appearance: none; /* Remove default arrow in Firefox*/
+   appearance: none; /*Remove default arrow */
   background: transparent; /* Ensure the background is transparent */
   border-radius: 4px; /* Optional: Add border radius */
   position: relative;
+
 }
 /* Container to position the custom arrow */
-.select-container {
-  position: relative;
-}
-/* Custom arrow using pseudo-element */
-.select-container::after {
-  content: url(/assets/svg/selectArrow.svg) !important;
-  position: absolute;
-  right: 7px;
-  top: 40%;
-  width: 5px !important;
-  transform: translateY(-50%);/* Center the arrow vertically */ /* Ensure the arrow does not block clicks */
-  cursor: pointer;
-}
-.select-container {
-  position: relative;
-  display: inline-block;
-}
-.select-container select {
-  width: 100%;
-}
+
+
 select#mySelect option {
   background-color: white;
   width: 100px !important;

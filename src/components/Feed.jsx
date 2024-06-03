@@ -19,10 +19,9 @@ export default function Feed() {
           <p className="font-inter text-darkGreen text-[22px] font-bold leading-1lg">
             Feed
           </p>
-          <div className="h-[27px] bg-offWhite flex items-center justify-between pl-[6px]  py-2 border border-solid border-fadeGreen rounded-[4px] gap-2">
-            <Logo />
-            <div class="select-container">
-    <select id="mySelect" class="focus:outline-none text-darkGreen bg-transparent text-base leading-1lg pr-4">
+          <div className="h-[27px] flex items-center bg-offWhite justify-between   border border-solid border-fadeGreen rounded-[4px] gap-2 ">
+            <div class="select-container relative before:content-[url(/assets/svg/logo.svg)] before:absolute before:top-[17%] before:left-[6%] cursor-pointer after:content-[url(/assets/svg/selectArrow.svg)]  after:absolute after:right-[7px] after:w-[5px] after:h-[3px] after:top-[10%] after:pointer-events-none before:pointer-events-none">
+    <select id="mySelect" class="focus:outline-none text-darkGreen  py-2 pl-[25px] text-base leading-1lg pr-4 cursor-pointer">
       <option value="value1">#36985</option>
       <option value="value2">#36986</option>
       <option value="value3">#36987</option>
@@ -32,7 +31,7 @@ export default function Feed() {
           </div>
         </div>
         {tab === "tab1" && (
-       <div className="flex items-center gap-1 bg-white py-1 px-4 rounded-[4px] justify-center max-w-[183px] mx-auto mb-5 ">
+       <div className="flex items-center gap-1 bg-offWhite py-1 px-4 rounded-[4px] justify-center max-w-[183px] mx-auto mb-5 ">
        <Image
          src="/assets/svg/timeSvg.svg"
          width={12}

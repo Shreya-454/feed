@@ -8,7 +8,8 @@ export default function Content() {
                 {contentdata.map((data, index) => {
                     return (
                         <div key={index}>
-                                <div className="bg-offWhite p-2 rounded-[4px] mb-1">
+                                <div className={`bg-offWhite p-2 rounded-[4px] mb-1 border border-solid ${
+                                    data.content1 === "won" ? "border-[#DCFCE7]":" border-[#F1DBDB33]"}`}>
                                     <div className="flex justify-between items-center">
                                         <div className="flex gap-2">
                                             <div>
