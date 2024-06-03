@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CommonBtn from "./common/CommonBtn";
 import { basedCarddata, shieldBtnpopup, BonkBtnpopup } from "./common/Helper";
 import Image from 'next/image';
@@ -15,7 +15,7 @@ const Popup = ({ onClose, data, type }) => {
                                 <div key={index}>
                                     <div className='flex items-center gap-2'>
                                         <Image src="/assets/svg/popup1.svg" alt="popupsvg" width={22} height={28} className='mb-[12px]' />
-                                        <h4 className='font-bold text-darkBlue mb-[16px] text-base'>{item.heading}</h4>
+                                        <h4 className='font-bold text-darkGreen mb-[16px] text-base'>{item.heading}</h4>
                                         <div className='max-w-[52px] bg-lightGreen py-[2px] px-[8px] rounded-[4px] mb-[12px]'>
                                             <p className='text-darkGrey text-xs font-normal !leading-5lg text-nowrap'>id: 679</p>
                                         </div>
@@ -24,19 +24,19 @@ const Popup = ({ onClose, data, type }) => {
                                         <div className='border-[1px] border-solid border-lightGrey px-[6px] pt-[3px] pb-[5px] w-[24px] h-[24px] rounded-[4px] '>
                                             <Image src="/assets/svg/popup2.svg" alt="popupsvg" width={10} height={16} className='mb-[12px' />
                                         </div>
-                                        <p className='font-normal text-base text-gray !leading-1lg'>{item.para}</p>
+                                        <p className='font-normal text-base text-darkGrey !leading-1lg'>{item.para}</p>
                                     </div>
                                     <div className='flex items-center gap-2 mb-2'>
                                         <div className='border-[1px] border-solid border-lightGrey px-[6px] py-[5px] w-[24px] h-[24px] rounded-[4px] '>
                                             <Image src="/assets/svg/shield.svg" alt="popupsvg" width={12} height={14} className='pb-[8px]' />
                                         </div>
-                                        <p className='font-normal text-base text-gray leading-1lg'>{item.para2}</p>
+                                        <p className='font-normal text-base text-darkGrey leading-1lg'>{item.para2}</p>
                                     </div>
                                     <div className='flex items-center gap-2 mb-1'>
                                         <div className='border-[1px] border-solid border-lightGrey px-[6px] pt-[7px] pb-[5px] w-[24px] h-[24px] rounded-[4px] '>
                                             <Image src="/assets/svg/popup3.svg" alt="popupsvg" width={15} height={13} className='mb-[12px' />
                                         </div>
-                                        <p className='font-normal text-base text-gray leading-1lg'>{item.para3}</p>
+                                        <p className='font-normal text-base text-darkGrey leading-1lg'>{item.para3}</p>
                                     </div>
                                 </div>
                             ))
@@ -44,8 +44,8 @@ const Popup = ({ onClose, data, type }) => {
                             data.map((item, index) => (
                                 <div key={index}>
                                     <h4 className='font-bold text-darkGreen mb-[10px] text-base'>{item.heading}</h4>
-                                    <p className='font-normal text-base text-black !leading-1lg'>{item.para}</p>
-                                    <p className='font-normal text-base text-black leading-1lg'>{item.para2}</p>
+                                    <p className='font-normal text-base text-darkGrey !leading-1lg'>{item.para}</p>
+                                    <p className='font-normal text-base text-darkGrey leading-1lg'>{item.para2}</p>
                                 </div>
                             ))
                         )}
@@ -56,6 +56,7 @@ const Popup = ({ onClose, data, type }) => {
         </div>
     );
 };
+
 const Based = () => {
     const [popupVisible, setPopupVisible] = useState(false);
     const [secondaryPopupVisible, setSecondaryPopupVisible] = useState(false);
@@ -75,6 +76,7 @@ const Based = () => {
         setPopupVisible(false);
         setSecondaryPopupVisible(false);
     };
+
     return (
         <>
             <div className="h-[70vh] overflow-y-scroll">
