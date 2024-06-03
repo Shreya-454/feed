@@ -6,7 +6,6 @@ export default function Document() {
       <Head>
       <title>MY PET</title>
        {/* Primary Meta Tags */}
-<title>Feed </title>
 <meta name="title" content="Feed " />
 <meta name="description" content=" to next battle" />
 
