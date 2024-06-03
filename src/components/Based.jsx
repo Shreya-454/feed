@@ -77,7 +77,7 @@ const Based = () => {
     };
     return (
         <>
-            <div className="2xl:max-h-[70vh] max-h-[566px] h-full overflow-y-scroll">
+            <div className="2xl:max-h-[70vh] max-h-[540px] h-full overflow-y-scroll">
           
 <label className="inline-flex items-center cursor-pointer">
   <input type="checkbox" value="" className="sr-only peer"/>
