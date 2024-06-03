@@ -171,18 +171,3 @@ export const basedCarddata = [
         text: 'Shield',
     },
 ]
-export const shieldBtnpopup = [
-    {
-        heading: "Asphyxiated",
-        para: "11",
-        para2: "10",
-        para3: "2d 2h 24m 30s",
-    },
-]
-export const BonkBtnpopup = [
-    {
-        heading: "Rules",
-        para: "You can attack a pet above your level every 30mins and earn 0.5% of their rewards.",
-        para2: "A pet can only be attacked once per hour.",
-    },
-]

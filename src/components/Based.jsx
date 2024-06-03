@@ -1,80 +1,33 @@
 "use client";
 import React, { useState } from 'react';
 import CommonBtn from "./common/CommonBtn";
-import { basedCarddata, shieldBtnpopup, BonkBtnpopup } from "./common/Helper";
+import { basedCarddata,} from "./common/Helper";
 import Image from 'next/image';
 
-const Popup = ({ onClose, data, type }) => {
-    return (
-        <div onClick={onClose}>
-            <div className="fixed inset-0 bg-cGreen bg-opacity-50 backdrop-blur-lg max-w-[393px] mx-auto flex justify-center items-center">
-                <div className="bg-lightGreen w-full mx-[16.5px] p-2 rounded-[16px]">
-                    <div className='bg-white p-4 rounded-[8px]'>
-                        {type === "primary" ? (
-                            data.map((item, index) => (
-                                <div key={index}>
-                                    <div className='flex items-center gap-2'>
-                                        <Image src="/assets/svg/popup1.svg" alt="popupsvg" width={22} height={28} className='mb-[12px]' />
-                                        <h4 className='font-bold text-darkBlue mb-[16px] text-base'>{item.heading}</h4>
-                                        <div className='max-w-[52px] bg-lightGreen py-[2px] px-[8px] rounded-[4px] mb-[12px]'>
-                                            <p className='text-darkGrey text-xs font-normal !leading-5lg text-nowrap'>id: 679</p>
-                                        </div>
-                                    </div>
-                                    <div className='flex items-center gap-2 mb-2'>
-                                        <div className='border-[1px] border-solid border-lightGrey px-[6px] pt-[3px] pb-[5px] w-[24px] h-[24px] rounded-[4px] '>
-                                            <Image src="/assets/svg/popup2.svg" alt="popupsvg" width={10} height={16} className='mb-[12px' />
-                                        </div>
-                                        <p className='font-normal text-base text-gray !leading-1lg'>{item.para}</p>
-                                    </div>
-                                    <div className='flex items-center gap-2 mb-2'>
-                                        <div className='border-[1px] border-solid border-lightGrey px-[6px] py-[5px] w-[24px] h-[24px] rounded-[4px] '>
-                                            <Image src="/assets/svg/shield.svg" alt="popupsvg" width={12} height={14} className='pb-[8px]' />
-                                        </div>
-                                        <p className='font-normal text-base text-gray leading-1lg'>{item.para2}</p>
-                                    </div>
-                                    <div className='flex items-center gap-2 mb-1'>
-                                        <div className='border-[1px] border-solid border-lightGrey px-[6px] pt-[7px] pb-[5px] w-[24px] h-[24px] rounded-[4px] '>
-                                            <Image src="/assets/svg/popup3.svg" alt="popupsvg" width={15} height={13} className='mb-[12px' />
-                                        </div>
-                                        <p className='font-normal text-base text-gray leading-1lg'>{item.para3}</p>
-                                    </div>
-                                </div>
-                            ))
-                        ) : (
-                            data.map((item, index) => (
-                                <div key={index}>
-                                    <h4 className='font-bold text-darkGreen mb-[10px] text-base'>{item.heading}</h4>
-                                    <p className='font-normal text-base text-black !leading-1lg'>{item.para}</p>
-                                    <p className='font-normal text-base text-black leading-1lg'>{item.para2}</p>
-                                </div>
-                            ))
-                        )}
-                    </div>
-                    <button onClick={onClose} className="w-full shadow-[1px_1px_0px_0px_#16653480] font-bold bg-Green text-2md rounded-[8px] py-[7.5px] mt-1 text-offWhite">Ok</button>
-                </div>
-            </div>
-        </div>
-    );
-};
 const Based = () => {
-    const [popupVisible, setPopupVisible] = useState(false);
-    const [secondaryPopupVisible, setSecondaryPopupVisible] = useState(false);
-    const [popupData, setPopupData] = useState([]);
-    const [popupType, setPopupType] = useState("primary");
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState(null);
+    const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
 
-    const handleBtnClick = (data, isSecondary = false) => {
-        setPopupData(data);
-        setPopupType(isSecondary ? "secondary" : "primary");
-        if (isSecondary) {
-            setSecondaryPopupVisible(true);
+    const openModal = (content, cursor) => {
+        if (cursor === 'cursor-not-allowed' || cursor === '3' || cursor === '9') {
+            return false;
         } else {
-            setPopupVisible(true);
+            setModalContent(content);
+            setIsModalOpen(true);
+            return true;
         }
     };
-    const handleClosePopup = () => {
-        setPopupVisible(false);
-        setSecondaryPopupVisible(false);
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setModalContent(null);
+        setIsSecondModalOpen(true);
     };
+
+    const closeSecondModal = () => {
+        setIsSecondModalOpen(false);
+    };
+
     return (
         <>
             <div className="2xl:max-h-[70vh] max-h-[540px] h-full overflow-y-scroll">
@@ -111,15 +64,61 @@ const Based = () => {
                                     icon={data.icon}
                                     text={data.text}
                                     className={`${(index === 2 || index === 9 || index === 12) ? "!gap-2 opacity-50 pointer-events-none shadow-none" : ""}`}
-                                    onClick={() => handleBtnClick(index % 2 === 0 ? shieldBtnpopup : BonkBtnpopup, index % 2 !== 0)}
+                                    onClick={() => openModal()}
                                 />
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            {popupVisible && <Popup onClose={handleClosePopup} data={popupData} type={popupType} />}
-            {secondaryPopupVisible && <Popup onClose={handleClosePopup} data={popupData} type={popupType} />}
+             {isModalOpen && (
+                <div className='fixed inset-0 backdrop-blur-[10px] max-w-[393px] bg-[#9ED2AECC] mx-auto flex items-center justify-center z-50 left-0 top-0'>
+                    <div className='bg-lightGreen rounded-[16px] p-2 max-w-[361px] w-full mx-auto overflow-hidden'>
+                        <div className='max-w-[344px] rounded-lg p-4 bg-[#F0FDF4]'>
+                            <div className=' flex items-center gap-2 mb-[18px]'>
+                            <Image src="/assets/svg/popup1.svg" alt="popupsvg" width={22} height={28}/>
+                                <span className=' font-bold text-base leading-5 text-darkGreen'>Asphyxiated</span>
+                                <span className=' font-normal text-xs leading-[14.52px] tracking-[1%] p-[2px_6px] rounded bg-lightGreen text-darkGrey'>id: 679</span>
+                            </div>
+                            <div className=' flex flex-col gap-2'>
+                                <div className=' flex items-center gap-2'>
+                                <div className='border-[1px] border-solid border-lightGrey1 px-[6px] pt-[3px] pb-[5px] w-[24px] h-[24px] rounded-[4px] '>
+                                            <Image src="/assets/svg/popup2.svg" alt="popupsvg" width={10} height={16}  />
+                                        </div>
+                                    <span className=' font-normal text-base leading-5 text-darkGrey'>11</span>
+                                </div>
+                                <div className=' flex items-center gap-2'>
+                                <div className='border-[1px] border-solid border-lightGrey1 px-[6px] py-[5px] w-[24px] h-[24px] rounded-[4px] '>
+                                            <Image src="/assets/svg/shield.svg" alt="popupsvg" width={12} height={14} />
+                                        </div>
+                                    <span className=' font-normal text-base leading-5 text-darkGrey'>10</span>
+                                </div>
+                                <div className=' flex items-center gap-2'>
+                                <div className='border-[1px] border-solid border-lightGrey1 px-[6px] pt-[7px] pb-[5px] w-[24px] h-[24px] rounded-[4px] '>
+                                            <Image src="/assets/svg/popup3.svg" alt="popupsvg" width={15} height={13} className='mb-3' />
+                                        </div>
+                                    <span className=' font-normal text-base leading-5 text-darkGrey'>2d 2h 24m 30s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onClick={closeModal} className='mt-1 p-2 rounded-[8px] w-full max-h-[48px] shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-center py-[10.5px] font-bold text-[22px] leading-[26.63px] tracking-[1%] text-[#F0FDF4] bg-Green hover:bg-lightGreen hover:text-Green border-transparent border border-solid hover:border-Green duration-300'>Ok</button>
+                    </div>
+                </div>
+            )}
+
+            {isSecondModalOpen && (
+                <div className='fixed inset-0 bg-[#9ED2AECC] max-w-[393px] mx-auto backdrop-blur-[10px] flex items-center justify-center z-50'>
+                    <div className='bg-lightGreen rounded-[16px] p-2 max-w-[361px] w-full mx-auto overflow-hidden'>
+                        <div className='max-w-[344px] rounded-lg p-4 bg-offWhite'>
+                            <p className=' font-bold text-base leading-5 text-darkGreen'>Rules</p>
+                            <p className=' mt-4 text-base font-normal leading-5 text-black'>You can attack a pet above your level every 30mins and earn 0.5% of their rewards.
+                                <span className=' block'>  A pet can only be attacked once per hour.</span></p>
+                        </div>
+                        <button onClick={closeSecondModal} className='mt-1 px-2 rounded-[8px] w-full max-h-[48px] shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-center py-[10.5px] font-bold text-[22px] leading-[26.63px] tracking-[1%] text-[#F0FDF4] bg-Green hover:bg-lightGreen hover:text-Green border-transparent border border-solid hover:border-Green duration-300'>
+                          Ok</button>
+                    </div>
+                </div>
+            )}
         </>
     );
 }
