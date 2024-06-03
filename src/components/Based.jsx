@@ -101,7 +101,7 @@ const Based = () => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={closeModal} className='mt-1 p-2 rounded-[8px] w-full max-h-[48px] shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-center py-[10.5px] font-bold text-[22px] leading-[26.63px] tracking-[1%] text-[#F0FDF4] bg-Green hover:bg-lightGreen hover:text-Green border-transparent border border-solid hover:border-Green duration-300'>Ok</button>
+                        <button onClick={closeModal} className='mt-1 p-2 rounded-[8px] w-full max-h-[48px] shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-center py-[10.5px] font-bold text-[22px] leading-[26.63px] tracking-[1%] text-[#F0FDF4] bg-Green hover:bg-offWhite hover:text-Green border-transparent border border-solid hover:border-Green duration-300'>Ok</button>
                     </div>
                 </div>
             )}
@@ -114,7 +114,7 @@ const Based = () => {
                             <p className=' mt-4 text-base font-normal leading-5 text-black'>You can attack a pet above your level every 30mins and earn 0.5% of their rewards.
                                 <span className=' block'>  A pet can only be attacked once per hour.</span></p>
                         </div>
-                        <button onClick={closeSecondModal} className='mt-1 px-2 rounded-[8px] w-full max-h-[48px] shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-center py-[10.5px] font-bold text-[22px] leading-[26.63px] tracking-[1%] text-[#F0FDF4] bg-Green hover:bg-lightGreen hover:text-Green border-transparent border border-solid hover:border-Green duration-300'>
+                        <button onClick={closeSecondModal} className='mt-1 px-2 rounded-[8px] w-full max-h-[48px] shadow-[1px_1px_0px_0px_#16653480] flex items-center justify-center py-[10.5px] font-bold text-[22px] leading-[26.63px] tracking-[1%] text-offWhite bg-Green hover:bg-offWhite hover:text-Green border-transparent border border-solid hover:border-Green duration-300'>
                           Ok</button>
                     </div>
                 </div>
