@@ -74,7 +74,7 @@ const Based = () => {
              {isModalOpen && (
                 <div className='fixed inset-0 backdrop-blur-[10px] max-w-[393px] bg-[#9ED2AECC] mx-auto flex items-center justify-center z-50 left-0 top-0'>
                     <div className='bg-lightGreen rounded-[16px] p-2 max-w-[361px] w-full mx-auto overflow-hidden'>
-                        <div className='max-w-[344px] rounded-lg p-4 bg-[#F0FDF4]'>
+                        <div className='max-w-[344px] rounded-lg p-4 bg-offWhite'>
                             <div className=' flex items-center gap-2 mb-[18px]'>
                             <Image src="/assets/svg/popup1.svg" alt="popupsvg" width={22} height={28}/>
                                 <span className=' font-bold text-base leading-5 text-darkGreen'>Asphyxiated</span>
