@@ -12,11 +12,11 @@ export default function Hero() {
     }
     return(
         <div>
-<div className="max-w-[393px] mx-auto w-full bg-lightGreen  h-screen relative">
+<div className="max-w-[393px] mx-auto w-full bg-lightGreen h-screen relative">
    {tab === "tab1" && (
       <Feed/>
               )}
-   <div className="flex bg-[#F0FDF4] py-2 px-[21.5px] fixed bottom-0">
+   <div className="flex bg-[#F0FDF4] py-2 px-[21.5px] fixed bottom-0 border-t  border-solid border-[#16653433]">
    <button  onClick={() => openNav("tab1")}  className={`  rounded-[4px] w-[70px] h-[53px] flex flex-col justify-center items-center ${
     tab === "tab1"?"opacity-100 bg-lightGreen":"opacity-80 bg-transparent "
    }`}>

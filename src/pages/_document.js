@@ -4,9 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <title>FEED</title>
+      <title>MY PET</title>
        {/* Primary Meta Tags */}
-<title>Feed </title>
 <meta name="title" content="Feed " />
 <meta name="description" content=" to next battle" />
 

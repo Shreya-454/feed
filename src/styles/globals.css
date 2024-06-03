@@ -7,24 +7,24 @@
 body{
     font-family: 'Inter',sans-serif;
 }
+#mySelect {
+  -webkit-appearance: none; /* Remove default arrow in Chrome, Safari, Edge */
+  -moz-appearance: none; /* Remove default arrow in Firefox*/
+   appearance: none; /*Remove default arrow */
+  background: transparent; /* Ensure the background is transparent */
+  border-radius: 4px; /* Optional: Add border radius */
+  position: relative;
 
-select option [value="one"] {
-    background-color: white !important;
-    color: #052E16 !important;
 }
+/* Container to position the custom arrow */
 
 
- 
 select#mySelect option {
   background-color: white;
   width: 100px !important;
   color: #052E16 !important;
+  padding: 10px !important;
 }
-select#mySelect option:hover{
-    background-color: grey !important;
-} 
-
- 
 ::-webkit-scrollbar{
   display: none;
 }

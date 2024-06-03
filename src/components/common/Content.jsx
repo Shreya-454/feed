@@ -4,11 +4,12 @@ import Image from "next/image";
 export default function Content() {
     return (
         <>
-            <div className=" h-[70vh] overflow-y-scroll">
+            <div className=" 2xl:max-h-[69vh] max-h-[480px]  overflow-y-scroll">
                 {contentdata.map((data, index) => {
                     return (
                         <div key={index}>
-                                <div className="bg-offWhite p-2 rounded-[4px] mb-1">
+                                <div className={`bg-offWhite p-2 rounded-[4px] mb-1 border border-solid ${
+                                    data.content1 === "won" ? "border-[#DCFCE7]":" border-[#F1DBDB33]"}`}>
                                     <div className="flex justify-between items-center">
                                         <div className="flex gap-2">
                                             <div>
